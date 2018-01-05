@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Green Bank</string>
+    <string name="add_to_plot">ຕື່ມການດິນຕອນ</string>
+    <string name="back_button">ຄືນ</string>
+    <string name="create">ສ້າງສົມ</string>
+    <string name="create_plot">ສ້າງດິນຕອນ</string>
+    <string name="estimate">ປະມານມູນຄ່າ</string>
+    <string name="girth">ຈັກກະພານ</string>
+    <string name="home_button">ເຮືອນ</string>
+    <string name="invalid_plot_name">ຈຸດປະສົງທີ່ບໍ່ຖືກຕ້ອງ</string>
+    <string name="manage_plot">ການຄຸ້ມຄອງດິນຕອນ</string>
+    <string name="measure_tree">ແຜນການວັດແທກ</string>
+    <string name="merchant_height">ຄວາມສູງຂອງສິນຄ້າ</string>
+    <string name="name_plot">ໃສ່ຊື່ທີ່ດິນ</string>
+    <string name="plot_management">ການຄຸ້ມຄອງທີ່ດິນ</string>
+    <string name="settings">ຕົວເລືອກ</string>
+    <string name="plot_name">ຊື່ດິນຕອນ</string>
+    <string name="taper">ດຶງອອກເທື່ອລະເສັ້ນ</string>
+    <string name="title_activity_create_plot">ແຜນທີ່</string>
+    <string name="total_height">ຄວາມສູງຂອງລໍາຕົ້ນທັງຫມົດ</string>
+    <string name="tree_id">ການກໍານົດຕົ້ນໄມ້</string>
+    <string name="log_size">ຂະຫນາດຂອງບັນທຶກ</string>
+    <string name="too_small">ນ້ອຍໂພດ</string>
+    <string name="total_tree_value">ປະລິມານໄມ້ທັງຫມົດ</string>
+    <string name="tree_value">ມູນຄ່າ</string>
+</resources>

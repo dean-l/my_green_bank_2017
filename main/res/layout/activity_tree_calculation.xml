@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context="com.mygreenbank.mygreenbank.TreeCalculation">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="3"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/girth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="0"
+                android:hint="@string/girth"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/totalHeight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="1"
+                android:hint="@string/total_height"
+                android:inputType="numberDecimal" />
+
+            <Spinner
+                android:id="@+id/selectCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/selectPlot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30px"/>
+
+            <Button
+                android:id="@+id/estimate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="2"
+                android:background="@android:drawable/btn_default"
+                android:onClick="onButtonClick"
+                android:textColor="@color/colorSecondary"
+                android:text="@string/estimate"
+                android:layout_marginBottom="5dp"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/addToPlot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="3"
+                android:background="@android:drawable/btn_default"
+                android:onClick="onButtonClick"
+                android:text="@string/add_to_plot"
+                android:textColor="@color/colorSecondary"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="true"
+                android:text="@string/results"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorSecondary"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/totalVolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_tree_volume"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/total_tree_price"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorSecondary"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/more_results"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/btn_default"
+                android:onClick="onButtonClick"
+                android:textColor="@color/colorSecondary"
+                android:text="@string/more_results"
+                android:textSize="25sp"
+                android:visibility="invisible"/>
+
+            <GridLayout
+                android:id="@+id/logSizeTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible">
+
+            </GridLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/options_menu"
+        android:layout_gravity="start"/>
+
+</android.support.v4.widget.DrawerLayout>

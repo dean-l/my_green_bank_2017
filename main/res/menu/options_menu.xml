@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="@string/home_button"/>
+
+    <item
+        android:id="@+id/menu_tree_calculation"
+        android:title="@string/measure_tree"/>
+    <item
+        android:id="@+id/menu_create_plot"
+        android:title="@string/create_plot"/>
+    <item
+        android:id="@+id/menu_manage_plot"
+        android:title="@string/manage_plot"/>
+    <item
+        android:id="@+id/menu_settings"
+        android:title="@string/settings"/>
+</menu>
